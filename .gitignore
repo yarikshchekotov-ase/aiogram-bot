@@ -1,0 +1,7 @@
+/.venv
+bandit.yaml
+/__pycache__
+/.env
+/.vscode
+/handlers/__pycache__
+/forms/__pycache__
