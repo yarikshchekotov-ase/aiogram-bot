@@ -1,0 +1,21 @@
+name: Aiogram Bot
+
+on:
+  push:
+    branches: ["main", "master"]
+  pull_request:
+    branches: ["main", "master"]
+
+
+jobs:
+  build_image:
+    runs-on: ubuntu-latest
+    
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@4
+
+      - name: Run Docker Build 
+        run: |
+            docker build -t aiogram-bot .
